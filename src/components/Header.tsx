@@ -144,30 +144,30 @@ export default function Header() {
                       </Link>
 
                       {servicesDropdownOpen && (
-                        <div className="absolute left-0 mt-0 w-88 rounded-xl bg-white shadow-xl border border-slate-200 p-3 grid gap-1.5 animate-in fade-in duration-150">
+                        <div className="absolute left-0 mt-0 w-[560px] rounded-xl bg-white shadow-xl border border-slate-200 p-3 grid grid-cols-2 gap-1.5 animate-in fade-in duration-150">
                           {serviceSublinks.map((item) => {
                             const IconComponent = item.icon;
                             return (
                               <Link
                                 key={item.name}
                                 href={item.href}
-                                className="flex items-start p-2.5 rounded-lg hover:bg-sky-50 transition-colors group/item"
+                                className="flex items-start p-3 rounded-lg hover:bg-sky-50 transition-colors group/item"
                               >
-                                <div className="p-2 rounded-lg bg-sky-100 text-[#034EA2] mr-3 group-hover/item:bg-[#034EA2] group-hover/item:text-white transition-colors">
+                                <div className="p-2 rounded-lg bg-sky-100 text-[#034EA2] mr-3 flex-shrink-0 group-hover/item:bg-[#034EA2] group-hover/item:text-white transition-colors">
                                   <IconComponent className="w-4 h-4" />
                                 </div>
                                 <div>
-                                  <div className="text-sm font-bold text-slate-900 group-hover/item:text-[#034EA2]">
+                                  <div className="text-sm font-bold text-slate-900 group-hover/item:text-[#034EA2] whitespace-nowrap">
                                     {item.name}
                                   </div>
-                                  <div className="text-xs text-slate-600 leading-snug">
+                                  <div className="text-xs text-slate-500 leading-snug mt-0.5">
                                     {item.desc}
                                   </div>
                                 </div>
                               </Link>
                             );
                           })}
-                          <div className="pt-2.5 mt-1 border-t border-slate-100">
+                          <div className="col-span-2 pt-2.5 mt-1 border-t border-slate-100">
                             <Link
                               href="/services"
                               className="text-sm font-bold text-[#034EA2] hover:underline flex items-center justify-between px-2 py-1"

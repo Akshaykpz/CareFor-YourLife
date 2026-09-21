@@ -16,18 +16,17 @@ import {
 import {
   SERVICES_DATA,
   HOW_IT_WORKS_STEPS,
-  FAQS,
 } from "@/data/siteData";
 import ServiceCard from "@/components/ServiceCard";
 
 export default function HomePage() {
   return (
-    <div className="space-y-14 md:space-y-18 pb-20 bg-white">
+    <div className="space-y-14 md:space-y-18 pb-20">
       {/* ========================================================================= */}
       {/* 1. HERO SECTION: Narayana Health Inspired Fresh White & Cool Blue */}
       {/* ========================================================================= */}
-      <section className="relative hero-narayana-gradient pt-8 pb-14 md:pt-12 md:pb-16 border-b border-slate-200/80 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative hero-narayana-gradient pt-16 pb-14 md:pt-20 md:pb-16 border-b border-slate-200/80 overflow-hidden">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             
             {/* Left Column: Focused Messaging */}
@@ -35,7 +34,7 @@ export default function HomePage() {
               {/* Trust Badge */}
               <div className="inline-flex items-center space-x-2 bg-white border border-slate-200 px-4 py-2 rounded-full text-[#034EA2] text-sm font-semibold shadow-xs">
                 <Sparkles className="w-4 h-4 text-[#034EA2] animate-pulse" />
-                <span>Trusted Healthcare & Everyday Life Assistance</span>
+                <span>Trusted Healthcare &amp; Everyday Life Assistance</span>
               </div>
 
               {/* Primary Headline */}
@@ -135,7 +134,7 @@ export default function HomePage() {
       {/* ========================================================================= */}
       {/* 2. TRUST STATS STRIP (Clean Cool White) */}
       {/* ========================================================================= */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="bg-white rounded-xl p-6 sm:p-7 shadow-xs border border-slate-200">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
             <div className="pt-3 md:pt-0">
@@ -144,10 +143,10 @@ export default function HomePage() {
             </div>
             <div className="pt-3 md:pt-0">
               <div className="text-[#034EA2] font-bold text-base sm:text-lg">Verified Helpers</div>
-              <p className="text-xs sm:text-sm text-slate-600 mt-1">ID & background cleared</p>
+              <p className="text-xs sm:text-sm text-slate-600 mt-1">ID &amp; background cleared</p>
             </div>
             <div className="pt-3 md:pt-0">
-              <div className="text-[#034EA2] font-bold text-base sm:text-lg">Safe & Reliable</div>
+              <div className="text-[#034EA2] font-bold text-base sm:text-lg">Safe &amp; Reliable</div>
               <p className="text-xs sm:text-sm text-slate-600 mt-1">Safety-first client care</p>
             </div>
             <div className="pt-3 md:pt-0">
@@ -165,8 +164,8 @@ export default function HomePage() {
       {/* ========================================================================= */}
       {/* 3. OUR SERVICES: Real Photography Cards */}
       {/* ========================================================================= */}
-      <section id="services" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-10">
+      <section id="services" className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-10 py-6">
+        <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-sm font-bold uppercase tracking-wider text-[#034EA2] bg-sky-50 px-4 py-1.5 rounded-full border border-sky-200">
             Our Core Offerings
           </span>
@@ -179,7 +178,7 @@ export default function HomePage() {
         </div>
 
         {/* 6 Real Image Service Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {SERVICES_DATA.map((service) => (
             <ServiceCard key={service.id} service={service} />
           ))}
@@ -189,7 +188,7 @@ export default function HomePage() {
       {/* ========================================================================= */}
       {/* 4. NARAYANA STYLE: 3-COLUMN CARE & HEALTH MONITORING SHOWCASE */}
       {/* ========================================================================= */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <section className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-10 py-6">
         <div className="text-center max-w-3xl mx-auto mb-10">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0A1B39]">
             Care For Your Life: A Smarter Path to Complete Family Well-Being
@@ -299,11 +298,11 @@ export default function HomePage() {
       {/* ========================================================================= */}
       {/* 5. FOR FAMILIES & SENIORS (Streamlined Spotlight) */}
       {/* ========================================================================= */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="bg-white rounded-2xl p-6 sm:p-10 border border-slate-200 shadow-subtle grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7 space-y-4">
             <span className="text-xs font-bold uppercase tracking-wider text-[#034EA2] bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-200">
-              For Families & Elders
+              For Families &amp; Elders
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#0A1B39] leading-tight">
               Because Your Loved Ones Deserve Reliable Support.
@@ -315,7 +314,7 @@ export default function HomePage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 font-medium pt-1">
               <div className="flex items-center space-x-2.5">
                 <CheckCircle2 className="w-5 h-5 text-[#034EA2] flex-shrink-0" />
-                <span>Hospital queue & wheelchair support</span>
+                <span>Hospital queue &amp; wheelchair support</span>
               </div>
               <div className="flex items-center space-x-2.5">
                 <CheckCircle2 className="w-5 h-5 text-[#034EA2] flex-shrink-0" />
@@ -323,7 +322,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center space-x-2.5">
                 <CheckCircle2 className="w-5 h-5 text-[#034EA2] flex-shrink-0" />
-                <span>Elder companionship & wellness checks</span>
+                <span>Elder companionship &amp; wellness checks</span>
               </div>
               <div className="flex items-center space-x-2.5">
                 <CheckCircle2 className="w-5 h-5 text-[#034EA2] flex-shrink-0" />
@@ -359,42 +358,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ========================================================================= */}
-      {/* 6. QUICK FAQ & STREAMLINED CTA */}
-      {/* ========================================================================= */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#0A1B39]">
-            Frequently Asked Questions
-          </h2>
-        </div>
-
-        <div className="space-y-4">
-          {FAQS.slice(0, 4).map((faq, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-xl p-5 border border-slate-200/90 shadow-2xs text-left"
-            >
-              <h3 className="text-base sm:text-lg font-bold text-[#0A1B39] mb-2">
-                {faq.q}
-              </h3>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">{faq.a}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center mt-6">
-          <Link
-            href="/faq"
-            className="text-sm sm:text-base font-bold text-[#034EA2] hover:underline"
-          >
-            View all questions & answers →
-          </Link>
-        </div>
-      </section>
 
       {/* Final Booking Callout */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="bg-[#034EA2] text-white rounded-2xl p-8 sm:p-10 text-center shadow-md">
           <h2 className="text-2xl sm:text-3xl font-bold">
             Ready to arrange trusted support for your family?
