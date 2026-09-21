@@ -45,14 +45,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/images/logo/app_icon.png", type: "image/png" },
-      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico?v=2" },
+      { url: "/favicon.png?v=2", type: "image/png" },
+      { url: "/images/logo/app_icon_badge.png", type: "image/png" },
     ],
-    shortcut: "/images/logo/app_icon.png",
+    shortcut: "/favicon.png?v=2",
     apple: [
       { url: "/apple-touch-icon.png" },
-      { url: "/images/logo/app_icon.png" },
+      { url: "/images/logo/app_icon_badge.png" },
     ],
   },
 };
