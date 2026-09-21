@@ -45,14 +45,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico?v=2" },
-      { url: "/favicon.png?v=2", type: "image/png" },
-      { url: "/images/logo/app_icon_badge.png", type: "image/png" },
+      { url: "/favicon.ico" },
+      { url: "/images/logo/app_icon.png", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" },
     ],
-    shortcut: "/favicon.png?v=2",
+    shortcut: "/images/logo/app_icon.png",
     apple: [
       { url: "/apple-touch-icon.png" },
-      { url: "/images/logo/app_icon_badge.png" },
+      { url: "/images/logo/app_icon.png" },
     ],
   },
 };
@@ -64,17 +64,18 @@ const jsonLd = {
       "@type": "Organization",
       "@id": "https://careforyourlife247.com/#organization",
       "name": "Care For Your Life 24/7",
+      "alternateName": "Care For Your Life",
       "url": "https://careforyourlife247.com",
       "logo": {
         "@type": "ImageObject",
         "@id": "https://careforyourlife247.com/#logo",
-        "url": "https://careforyourlife247.com/images/logo/app_icon.png",
-        "contentUrl": "https://careforyourlife247.com/images/logo/app_icon.png",
-        "caption": "Care For Your Life 24/7 Icon",
-        "width": "512",
-        "height": "512"
+        "url": "https://careforyourlife247.com/images/logo/google_search_logo.png",
+        "contentUrl": "https://careforyourlife247.com/images/logo/google_search_logo.png",
+        "caption": "Care For Your Life 24/7 Logo",
+        "width": "1024",
+        "height": "1024"
       },
-      "image": "https://careforyourlife247.com/images/logo/app_icon.png",
+      "image": "https://careforyourlife247.com/images/logo/google_search_logo.png",
       "telephone": "+91-1800-000-2470",
       "description": "Healthcare assistance, elder companionship, home diagnostic tests and medicine delivery."
     },
@@ -83,6 +84,7 @@ const jsonLd = {
       "@id": "https://careforyourlife247.com/#website",
       "url": "https://careforyourlife247.com",
       "name": "Care For Your Life 24/7",
+      "alternateName": "Care For Your Life",
       "publisher": {
         "@id": "https://careforyourlife247.com/#organization"
       }
